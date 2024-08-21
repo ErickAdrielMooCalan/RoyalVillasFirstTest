@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD 3 - MODAL - ERICK MOO</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css' >
+    <link rel='stylesheet' type='text/css' media='screen' href='movil.css' >
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+
+</head>
+<body>
+
+    <header class="ancho">
+        <figure>
+            <img src="imagenes/logo.jpg" alt="">
+        </figure>
+    </header>
+
+
+    <section class="ancho seccion1">
+
+
+        <div class="izquierdo">
+            <h3 class="titulo1">Our Team</h3>
+            <h1 class="titulo2">A Dedicated Team of Experts</h1>
+
+            <br>
+
+
+            <p class="info_1">
+                Passion, experience and a fierce commitment to education are
+                the cornerstones of our success in the beauty industry.
+            </p>
+
+
+            <br>
+
+            <p class="info_2">
+                We believe that being the largest SPA in the area not enough in itself to satisfy the
+                needs of our customers. For this reason we have built up a staff of specialized
+                professional who are proud to welcome you to our hotel, present What We Do, listen
+                to your needs and guarantee well-being and relaxion during your stay at our SPA
+                Resort.
+
+                <br><br>
+
+                Everyone in our teams is a certified specialist capable of delivering a unique service of
+                high quality you won't find anywhere else in modern spa and resort industry.
+            </p>
+
+            <br>
+
+            <div class="contenedorBotones">
+                <a class="Boton1" id="MostrarModealID">LEARN MORE</a>
+                <a class="Boton2" id="MostrarModealID2">VIEW ALL TEAM</a>
+
+            </div>
+        </div>
+
+        <div class="derecho">
+
+            <div class="Persona">
+                <figure class="contenedorFoto">
+                    <img src="imagenes/foto1.jpg" alt="">
+                </figure>
+
+                <br>
+
+                <p class="nombrePersona">Jessica Cooper</p>
+                <p class="puestoPersona">Esthetician</p>
+
+                <br>
+
+                <div class="redesSociales">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+
+                <br>
+
+                <a id="MostrarModealID3" class="Boton1">GET IN TOUCH</a>
+            </div>
+
+
+            <div class="Persona">
+                <figure class="contenedorFoto">
+                    <img src="imagenes/foto2.jpg" alt="">
+                </figure>
+
+                <br>
+
+                <p class="nombrePersona">Robert Wagner</p>
+                <p class="puestoPersona">Heairdresser</p>
+
+                <br>
+
+                <div class="redesSociales">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+
+                <br>
+
+                <a id="MostrarModealID4" class="Boton1">GET IN TOUCH</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div id="FondoModalID" class="FondoModeal">
+
+        <div class="contenidoModal">
+
+            <div class="contenedoBoton">
+                <i id="cerrarBotonID" class="fa-solid fa-circle-xmark botonCerrar"></i>
+            </div>
+
+            <h1>Contact Us</h1>
+
+            <br>
+
+            <p>
+                If you have any questions concerning our services, please fill out the
+                contact form below.
+            </p>
+            <br><br>
+
+            <form id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="    Name*" required class="barras">
+
+                    <br><br>
+
+                    <input type="email" id="email" name="email" placeholder="    Email*" required class="barras">
+
+                    <br><br>
+
+                    <textarea id="message" name="message" rows="4" placeholder="    Message*" required class="areamensaje"></textarea>
+
+                    <br><br>
+
+                <button type="submit" class="Boton1">Submit</button>
+            </form>
+
+            <figure class="oferta">
+                <img src="imagenes/ofertas.jpg" alt="">
+            </figure>
+
+        </div>
+
+    </div>
+
+
+    <footer class="ancho">
+
+    </footer>
+
+
+    <script>
+        var fondo = document.getElementById("FondoModalID");
+
+        $("#MostrarModealID").click(function () {
+            fondo.style.display = "flex";
+        });
+
+        $("#MostrarModealID2").click(function () {
+            fondo.style.display = "flex";
+        });
+
+        $("#MostrarModealID3").click(function () {
+            fondo.style.display = "flex";
+        });
+
+        $("#MostrarModealID4").click(function () {
+            fondo.style.display = "flex";
+        });
+
+        $("#cerrarBotonID").click(function () {
+            fondo.style.display = "none";
+        });
+
+
+        window.onclick = function (event){
+            if(event.target == fondo) {
+                fondo.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

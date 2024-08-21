@@ -1,0 +1,42 @@
+@media screen and (max-width:480px)
+{
+    .seccion1
+    {
+        flex-direction: column;
+    }
+
+    .izquierdo, .derecho
+    {
+        max-width: 100%;
+    }
+
+    .izquierdo
+    {
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .contenedorBotones
+    {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    .derecho
+    {
+        height: 700px;
+        width: 480px;
+        flex-direction: column;
+    }
+    .barras
+    {
+    width: 350px;
+    height: 40px;
+    }
+    .areamensaje
+    {
+    width: 350px;
+    height: 100px;
+    }
+
+
+}
